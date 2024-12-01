@@ -1,0 +1,6 @@
+# robots.txt for theunfoldpractice.com
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://theunfoldpractice.com/sitemap.xml
