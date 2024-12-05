@@ -19,10 +19,11 @@
 }
 
 body {
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+   font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif; /* Fallbacks */
+   font-weight: 400; /* Light weight */
    background-color: var(--color-background);
    color: var(--color-text);
-   line-height: 1.6;
+   line-height: 1.3;
 }
 
 .stix {
@@ -108,11 +109,8 @@ nav {
 }
 
 .service-details h4 {
-   font-family: 'STIX Two Text', serif;
-   font-size: 1.125rem;
    margin: 1.5rem 0 1rem;
    color: var(--color-accent);
-   font-style: italic;
 }
 
 .service-details ul {
