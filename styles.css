@@ -122,13 +122,14 @@ nav {
    margin-bottom: 0.75rem;
    padding-left: 1.5rem;
    position: relative;
+   line-height: 1.5; /* Ensure consistent spacing */
 }
 
 .service-details li::before {
    content: "";
    position: absolute;
+   top: 0.5em; /* Adjust to align with the first line */
    left: 0;
-   top: 0.7rem;
    width: 6px;
    height: 6px;
    background-color: var(--color-accent);
