@@ -2,11 +2,11 @@
 :root {
    --color-primary: #E64C3C;
    --color-primary-dark: #c4392b;
-   --color-background: #F0EAE2;
-   --color-text: #2D3748;
+   --color-background: #2C3E50;
+   --color-text: #BFC5CA;
    --color-text-muted: rgba(45, 55, 72, 0.9);
-   --color-border: #CBD5E0;
-   --color-card-background: rgba(255, 255, 255, 0.5);
+   --color-border: #566573;
+   --color-card-background: transparent;
    --color-accent: var(--color-primary);
    --color-accent-hover: var(--color-primary-dark);
    --color-divider: rgba(230, 76, 60, 0.2);
@@ -26,12 +26,21 @@ body {
    line-height: 1.3;
 }
 
+::selection {
+  background: #F9D949;
+}
+
 .stix {
    font-family: 'STIX Two Text', serif;
 }
 
+.bitter {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+}
+
 main {
-   padding: 4rem 1.5rem 6rem;
+   padding: 2rem 1.5rem 6rem;
    max-width: 64rem;
    margin: 0 auto;
 }
@@ -46,24 +55,24 @@ nav {
 }
 
 .logo {
-   font-family: 'STIX Two Text', serif;
+   font-family: "Bitter", serif;
    font-weight: 700;
-   font-style: italic;
    font-size: 1.5rem;
    color: var(--color-accent);
 }
 
 .hero {
-   font-family: 'STIX Two Text', serif;
-   font-size: clamp(2.5rem, 5vw, 4.5rem);
+   font-family: "Bitter", serif;
+   font-size: clamp(4rem, 6vw, 4.5rem);
+   font-style: italic;
    line-height: 1.2;
    margin-bottom: 3rem;
    color: var(--color-accent);
 }
 
 .hero-section .question {
-   font-size: clamp(1.5rem, 3vw, 2rem);
-   margin-bottom: 1.5rem;
+   font-size: clamp(1.5rem, 2.0vw, 2rem);
+   margin-bottom: 1rem;
 }
 
 .hero-section .lead {
@@ -77,10 +86,10 @@ nav {
 }
 
 .section-title {
-   font-family: 'STIX Two Text', serif;
+   font-family: "Bitter", serif;
    font-size: 2rem;
    color: var(--color-accent);
-   margin-top: 6rem;
+   margin-top: 4rem;
    margin-bottom: 2.5rem;
 }
 
@@ -92,12 +101,12 @@ nav {
 
 .service-item {
    border-left: 2px solid var(--color-accent);
-   padding: 2rem;
+   padding: 1rem 2rem;
    background: var(--color-card-background);
 }
 
 .service-item h3 {
-   font-family: 'STIX Two Text', serif;
+   font-family: "Bitter", serif;
    color: var(--color-accent);
    font-size: 1.5rem;
    margin-bottom: 1rem;
@@ -154,10 +163,10 @@ nav {
 }
 
 .question {
-   font-family: 'STIX Two Text', serif;
+   font-family: "Bitter", serif;
    font-size: 1.5rem;
+   font-weight: 500;
    color: var(--color-accent);
-   font-style: italic;
    margin-top: 2rem;
 }
 
